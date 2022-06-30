@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/escannerFragment"
+            android:icon="@drawable/ic_baseline_qr_code_scanner_24"
+            android:title="Escanner" />
+        <item
+            android:id="@+id/pagarFragment"
+            android:icon="@drawable/ic_baseline_pay_24"
+            android:title="Pagar" />
+
+        <item
+            android:id="@+id/recibosFragment"
+            android:icon="@drawable/ic_baseline_recibo_2_24"
+            android:title="Recibos" />
+        <item
+            android:id="@+id/nav_perfil_fragment"
+            android:icon="@drawable/ic_baseline_person_24"
+            android:title="Perfil" />
+        <item
+            android:id="@+id/formaDePagoFragment"
+            android:icon="@drawable/ic_baseline_payments_24"
+            android:title="Forma de pago" />
+        <item
+            android:id="@+id/logoutActivity2"
+            android:icon="@drawable/ic_baseline_login_24"
+            android:title="Cerrar sesion" />
+    </group>
+</menu>

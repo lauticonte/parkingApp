@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/escannerFragment">
+
+    <fragment
+        android:id="@+id/nav_perfil_fragment"
+        android:name="com.example.parkingapp.PerfilFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_blank" />
+    <activity
+        android:id="@+id/logoutActivity2"
+        android:name="com.example.parkingapp.logoutActivity"
+        android:label=" "
+        tools:layout="@layout/activity_logout" />
+    <fragment
+        android:id="@+id/pagarFragment"
+        android:name="com.example.parkingapp.PagarFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_pagar" />
+    <fragment
+        android:id="@+id/recibosFragment"
+        android:name="com.example.parkingapp.RecibosFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_recibos" />
+    <fragment
+        android:id="@+id/escannerFragment"
+        android:name="com.example.parkingapp.EscannerFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_escanner" />
+    <fragment
+        android:id="@+id/formaDePagoFragment"
+        android:name="com.example.parkingapp.FormaDePagoFragment"
+        android:label=" "
+        tools:layout="@layout/fragment_forma_de_pago" />
+    <activity
+        android:id="@+id/cambiarIdiomaActivity"
+        android:name="com.example.parkingapp.cambiarIdiomaActivity"
+        android:label="activity_cambiar_idioma"
+        tools:layout="@layout/activity_cambiar_idioma" />
+
+</navigation>

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".SingUpActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/roboto"
+        android:includeFontPadding="false"
+        android:text="¿Ya tienes una cuenta?"
+        android:textColor="#666666"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/roboto_bold"
+        android:includeFontPadding="false"
+        android:text="Iniciar Sesión"
+        android:textColor="#55C2FF"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Nombre"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:textColor="#4D000000"
+        android:textColorHint="#4D000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SingUpMail" />
+
+    <EditText
+        android:id="@+id/SingUpPassword"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:textColor="#4D000000"
+        android:textColorHint="#4D000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Username" />
+
+    <EditText
+        android:id="@+id/SingUpPassword2"
+        android:layout_width="310dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Validar Contraseña"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:textColor="#4D000000"
+        android:textColorHint="#4D000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SingUpPassword" />
+
+    <Button
+        android:id="@+id/SingUpButton"
+        android:layout_width="152dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="28dp"
+        android:background="@drawable/btn_bg"
+        android:fontFamily="@font/roboto"
+        android:text="Registrarse"
+        android:textAllCaps="false"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        app:backgroundTint="#55C2FF"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/SingUpPassword2"
+        android:onClick="singup" />
+
+    <EditText
+        android:id="@+id/SingUpMail"
+        android:layout_width="313dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginLeft="34dp"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/input_bg"
+        android:ems="10"
+        android:hint="Correo"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        android:paddingLeft="15dp"
+        android:textColor="#4D000000"
+        android:textColorHint="#4D000000"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="92dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Registrarse"
+        android:textColor="#666666"
+        android:textSize="32sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="125dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="132dp"
+        android:layout_marginTop="136dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo" />
+
+    <CheckBox
+        android:id="@+id/checkBoxTerminos"
+        android:layout_width="28dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="9dp"
+        android:layout_marginLeft="9dp"
+        android:layout_marginTop="27dp"
+        android:buttonTint="#4D000000"
+
+        app:layout_constraintStart_toEndOf="@+id/SingUpButton"
+        app:layout_constraintTop_toBottomOf="@+id/SingUpPassword2" />
+
+    <TextView
+        android:id="@+id/textViewAutenticacion"
+        android:layout_width="114dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginTop="28dp"
+        android:text="Aceptar Terminos y Condiciones"
+        android:textColor="#55C2FF"
+        android:textSize="14dp"
+        app:layout_constraintStart_toEndOf="@+id/checkBoxTerminos"
+        app:layout_constraintTop_toBottomOf="@+id/SingUpPassword2" />
+</androidx.constraintlayout.widget.ConstraintLayout>

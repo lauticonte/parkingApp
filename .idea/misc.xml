@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/drawable/ic_baseline_recibo_2_24.xml" value="0.345" />
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/activity_add_metodo_pago.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/activity_cambiar_idioma.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/activity_login.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/activity_logout.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/activity_nav_view_button.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/activity_recibo_detalle.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/activity_reset_password.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/activity_sing_up.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/activity_ty_condiciones.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/app_bar_main.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/fragment_escanner.xml" value="0.22" />
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/fragment_forma_de_pago.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/fragment_pagar.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/fragment_recibos.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/list_element_recibos.xml" value="0.17552083333333332" />
+        <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/nav_header_main.xml" value="0.17552083333333332" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
