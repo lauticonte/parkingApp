@@ -19,53 +19,42 @@ import com.google.zxing.integration.android.IntentResult;
 
 public class EscannerFragment extends Fragment {
 
-    private String mParam1;
-    private String mParam2;
-
-    private View vista;
-    private Button mBtnEscannearQR;
-    private TextView textViewInfoReturnEscanner;
+    Button mBtnEscannearQR;
+    TextView textViewInfoReturnEscanner;
 
     public EscannerFragment() {
         // Required empty public constructor
     }
 
-    // TODO: Rename and change types and number of parameters
-    public static EscannerFragment newInstance(String param1, String param2) {
-        EscannerFragment fragment = new EscannerFragment();
-        Bundle args = new Bundle();
-        fragment.setArguments(args);
-        return fragment;
-    }
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-    }
-
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 
-        vista = inflater.inflate(R.layout.fragment_escanner, container, false);
+        View vista = inflater.inflate(R.layout.fragment_escanner, container, false);
 
-       mBtnEscannearQR = (Button) vista.findViewById(R.id.BtnEscannearQR);
-       mBtnEscannearQR.setOnClickListener(new View.OnClickListener() {
-           @Override
-           public void onClick(View v) {
-               scanCode();
-           }
-       });
+        textViewInfoReturnEscanner = vista.findViewById(R.id.textViewInfoReturnEscanner);
+        mBtnEscannearQR = vista.findViewById(R.id.BtnEscannearQR);
+
+        mBtnEscannearQR.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v) {
+                scanCode();
+            }
+        });
 
         return vista;
     }
 
     public void scanCode(){
-        IntentIntegrator integrator = new IntentIntegrator(this.getActivity()).forSupportFragment(this);
-        integrator.setCaptureActivity(CaptureAct.class);
+        IntentIntegrator integrator = IntentIntegrator.forSupportFragment(EscannerFragment.this);
         integrator.setOrientationLocked(false);
-        integrator.setDesiredBarcodeFormats(IntentIntegrator.ALL_CODE_TYPES);
+        integrator.setCameraId(0);
+        integrator.setBeepEnabled(false);
+        integrator.setBarcodeImageEnabled(false);
+        integrator.setDesiredBarcodeFormats(IntentIntegrator.QR_CODE_TYPES);
         integrator.setPrompt("Scanning Code");
         integrator.initiateScan();
+
+
     }
 
     @Override
