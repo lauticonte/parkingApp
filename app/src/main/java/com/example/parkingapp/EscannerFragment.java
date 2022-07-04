@@ -77,6 +77,8 @@ public class EscannerFragment extends Fragment {
                     }
                 });
 
+                textViewInfoReturnEscanner.setText(result.getContents());
+
             }
         }
     }

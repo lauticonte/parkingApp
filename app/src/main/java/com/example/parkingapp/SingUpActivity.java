@@ -20,6 +20,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.auth.UserProfileChangeRequest;
 
 public class SingUpActivity extends AppCompatActivity {
 
@@ -124,9 +125,13 @@ public class SingUpActivity extends AppCompatActivity {
                                 }else{
 
                                     FirebaseUser user = firebaseAuth.getCurrentUser();
+                                    UserProfileChangeRequest profileUpdates = new UserProfileChangeRequest.Builder().setDisplayName(name).build();
+                                    user.updateProfile(profileUpdates);
                                     user.sendEmailVerification();
                                     firebaseAuth.signOut();
                                     openDilogEmail();
+
+
 
                                 }
                             }

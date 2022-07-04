@@ -39,33 +39,4 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/BtnEscannearQR" />
 
-    <TextView
-        android:id="@+id/textViewInfo2ReturnEscanner"
-        android:layout_width="213dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="10dp"
-        android:text="info"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewInfoReturnEscanner" />
-
-    <TextView
-        android:id="@+id/textViewInfo3ReturnEscanner"
-        android:layout_width="213dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="16dp"
-        android:text="info"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewInfo2ReturnEscanner" />
-
-    <TextView
-        android:id="@+id/textViewInfo4ReturnEscanner"
-        android:layout_width="213dp"
-        android:layout_height="22dp"
-        android:layout_marginStart="84dp"
-        android:layout_marginTop="12dp"
-        android:text="info"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textViewInfo3ReturnEscanner" />
 </androidx.constraintlayout.widget.ConstraintLayout>

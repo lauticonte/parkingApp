@@ -3,6 +3,8 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/lauty/AndroidStudioProjects/parkingApp/app/src/main/res/layout/fragment_blank.xml" value="0.22" />
+        <entry key="..\:/Users/lauty/AndroidStudioProjects/parkingApp/app/src/main/res/layout/fragment_escanner.xml" value="0.1" />
         <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/drawable/ic_baseline_recibo_2_24.xml" value="0.345" />
         <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/activity_add_metodo_pago.xml" value="0.17552083333333332" />
         <entry key="..\:/Users/lauty/OneDrive/Escritorio/ParkingApp-master/app/src/main/res/layout/activity_cambiar_idioma.xml" value="0.17552083333333332" />
